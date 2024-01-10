@@ -1,11 +1,6 @@
-const HelloWorld = () => {
-  return React.createElement("p", {}, "Hello World");
-};
-
-const anotherHello = () => {
-  return React.createElement("p", {}, "another hello");
-};
-
+import React from "react";
+import ReactDOM from "react-dom";
+import { HelloWorld, anotherHello } from "./another";
 const App = () => {
   return React.createElement(
     "h1",

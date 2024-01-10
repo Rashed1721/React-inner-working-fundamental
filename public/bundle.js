@@ -1,6 +1,16 @@
-import { HelloWorld, anotherHello } from "./another";
+import React$1 from 'react';
+import ReactDOM from 'react-dom';
+
+const HelloWorld = () => {
+  return React.createElement("p", {}, "Hello World");
+};
+
+const anotherHello = () => {
+  return React.createElement("p", {}, "another hello");
+};
+
 const App = () => {
-  return React.createElement(
+  return React$1.createElement(
     "h1",
     { style: { color: "red" } },
     "This is Recat App",
@@ -26,6 +36,6 @@ const App = () => {
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 // root.render(<App />);
-root.render(React.createElement(App));
+root.render(React$1.createElement(App));
 // root.render(App());
 console.log(root);
